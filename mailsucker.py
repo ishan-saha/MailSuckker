@@ -29,7 +29,7 @@ for row in range(0,sheet.max_row):
         print('mail sent to :',col[row].value,'identifier is:',hashlib.md5(email.encode()).hexdigest())
         # creating the message body
         message = MIMEMultipart('alternative')
-        message['Subject'] = "Diwali Bonus FY 2022 | Triveni Group"
+        message['Subject'] = "Phishing Email Subject" #change this subject line
         message['From']=username
         message['To']=email
         bodytext = MIMEText(body,'html')
